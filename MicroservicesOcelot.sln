@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "src\ApiGatewa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtAuthenticationManager", "src\JwtAuthenticationManager\JwtAuthenticationManager.csproj", "{C8B60DF0-B211-4F79-80DF-943A262244D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.Api", "Authentication.Api\Authentication.Api.csproj", "{ED43AB66-E394-4784-AC4C-88D7B61F1BAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication.Api", "src\Authentication.Api\Authentication.Api.csproj", "{86D56E76-FE95-4556-8159-6CDD47D6C224}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{C8B60DF0-B211-4F79-80DF-943A262244D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8B60DF0-B211-4F79-80DF-943A262244D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8B60DF0-B211-4F79-80DF-943A262244D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED43AB66-E394-4784-AC4C-88D7B61F1BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED43AB66-E394-4784-AC4C-88D7B61F1BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED43AB66-E394-4784-AC4C-88D7B61F1BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED43AB66-E394-4784-AC4C-88D7B61F1BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D56E76-FE95-4556-8159-6CDD47D6C224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D56E76-FE95-4556-8159-6CDD47D6C224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D56E76-FE95-4556-8159-6CDD47D6C224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D56E76-FE95-4556-8159-6CDD47D6C224}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,7 +54,7 @@ Global
 		{E14B3EAA-4F89-471E-B26B-FBE59AE2A102} = {5901F0A8-3577-4F48-B5E0-BEFC94AEEBE1}
 		{4BE78AE2-5186-4279-A1AF-339C59B445E3} = {311D36EC-218E-48DF-ACE7-53B9673C426F}
 		{C8B60DF0-B211-4F79-80DF-943A262244D7} = {83BAFB2D-B781-45F6-8B0C-2F93FF47D48F}
-		{ED43AB66-E394-4784-AC4C-88D7B61F1BAE} = {83BAFB2D-B781-45F6-8B0C-2F93FF47D48F}
+		{86D56E76-FE95-4556-8159-6CDD47D6C224} = {83BAFB2D-B781-45F6-8B0C-2F93FF47D48F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE839527-9A3A-4B41-998C-BB6829456695}
