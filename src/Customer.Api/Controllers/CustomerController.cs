@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Customer.Api.Controllers;
@@ -14,6 +15,7 @@ public class CustomerController : ControllerBase
 
     [HttpGet]
     [Route("customer")]
+    [Authorize]
     public ActionResult<IEnumerable<Customer>> List()
     {
         var customers = new List<Customer>

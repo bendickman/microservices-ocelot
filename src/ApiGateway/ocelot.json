@@ -26,7 +26,10 @@
           "Port": 7196
         }
       ],
-      "DownstreamPathTemplate": "/api/customer"
+      "DownstreamPathTemplate": "/api/customer",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
     }
   ],
   "GlobalConfiguration": {
