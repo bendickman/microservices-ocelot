@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Customer.Api.Controllers;
 [ApiController]
-[Route("[controller]")]
+[Route("api")]
 public class CustomerController : ControllerBase
 {
     private readonly ILogger<CustomerController> _logger;
@@ -12,7 +12,8 @@ public class CustomerController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet(Name = "Get Customers")]
+    [HttpGet]
+    [Route("customer")]
     public ActionResult<IEnumerable<Customer>> List()
     {
         var customers = new List<Customer>

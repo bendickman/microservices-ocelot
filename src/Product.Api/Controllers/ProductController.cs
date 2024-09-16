@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Product.Api.Controllers;
 [ApiController]
-[Route("[controller]")]
+[Route("api")]
 public class ProductController : ControllerBase
 {
     private readonly ILogger<ProductController> _logger;
@@ -12,7 +12,8 @@ public class ProductController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
+    [HttpGet]
+    [Route("product")]
     public ActionResult<IEnumerable<Product>> Get()
     {
         var products = new List<Product>()
