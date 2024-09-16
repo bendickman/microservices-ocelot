@@ -12,7 +12,14 @@
           "Port": 7258
         }
       ],
-      "DownstreamPathTemplate": "/api/product"
+      "DownstreamPathTemplate": "/api/product",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "10s",
+        "PeriodTimespan": 10,
+        "Limit": 5
+      }
     },
     // Customer API
     {
