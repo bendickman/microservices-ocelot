@@ -1,0 +1,35 @@
+{
+  "Routes": [
+    // Product API
+    {
+      "UpstreamPathTemplate": "/api/product",
+      "UpstreamHttpMethod": [ "Get" ],
+
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7258
+        }
+      ],
+      "DownstreamPathTemplate": "/api/product"
+    },
+    // Customer API
+    {
+      "UpstreamPathTemplate": "/api/customer",
+      "UpstreamHttpMethod": [ "Get" ],
+
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7196
+        }
+      ],
+      "DownstreamPathTemplate": "/api/customer"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7155"
+  }
+}
