@@ -1,0 +1,37 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "product",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "Product API",
+          "Version": "1.0",
+          "Url": "https://localhost:7258/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "customer",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Customer API",
+          "Version": "1.0",
+          "Url": "https://localhost:7196/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "authentication",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Authentication API",
+          "Version": "1.0",
+          "Url": "https://localhost:7123/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
