@@ -11,7 +11,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new() { Title = "Authentication API", Version = "v1", Description = "Allows users to authenticate using Json Web Tokens (JWTs)" });
+    c.SwaggerDoc("v1", new()
+    {
+        Title = "Authentication API",
+        Version = "v1",
+        Description = "Allows users to authenticate using Json Web Tokens (JWTs)",
+        Contact = new()
+        {
+            Name = "Ben Dickman",
+            Email = "ben.dickman@gmail.com",
+            Url = new("https://benjamindickman.com"),
+        },
+    });
 });
 
 var app = builder.Build();

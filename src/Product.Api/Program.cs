@@ -14,7 +14,18 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen(c =>
         {
-            c.SwaggerDoc("v1", new() { Title = "Product API", Version = "v1", Description = "Provides access to the Product data" });
+            c.SwaggerDoc("v1", new()
+            {
+                Title = "Product API",
+                Version = "v1",
+                Description = "Provides access to the Product data",
+                Contact = new()
+                {
+                    Name = "Ben Dickman",
+                    Email = "ben.dickman@gmail.com",
+                    Url = new("https://benjamindickman.com"),
+                },
+            });
         });
 
         var app = builder.Build();
